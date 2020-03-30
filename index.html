@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <style>
+      .body-style{
+        background-color:#293462;
+
+      }
+      .error-div {
+        display: none;
+        
+        border: 1px solid black;
+        background-color: red;
+      }
+      .signup-form{
+        background-color:white;
+        width: 250px;
+        border: 2px solid green;
+        border-radius: 20px;
+        padding: 30px;
+        justify-content: end;
+        margin-left: 50%;
+        margin-top: 2%;
+      }
+      input[type=text],input[type=email],input[type=number],input[type=password]{
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 0.5px solid black;
+    border-radius: 5px;
+  }
+  .para{
+    size: 20px;
+    color: white;
+    position: absolute;
+    margin-top: 200px;
+    left: 70px;
+
+
+  }
+
+    </style>
+  
+  </head>
+  <body class="body-style">
+   <!-- <form name="login-form" action="success.html" onsubmit="return validate();">
+      Useername: <input name="username" type="text">
+      Password: <input name="password" type="password">
+      <input type="submit" value="Login">
+    </form>-->
+     <h1 class="para">
+      JUST PLAY. HAVE FUN. ENJOY <br></h1>
+     <h1 style="position: absolute;margin-top: 250px;margin-left: 170px; color: red"> THE GAME.
+     </h1>
+    <form  class="signup-form" name="signup-form" action="success.html" onsubmit="return validateSignup();">
+      <div id="error-area" class="error-div"></div>
+      <div>
+       <p> First Name:</p> 
+        <input name="f-name" type="text">
+      </div>
+      <div>
+        <p>Last Name: </p>
+        <input name="l-name" type="text">
+      </div>
+      <div>
+        <p>Email: </p>
+        <input name="email" type="text">
+      </div>
+      <div>
+        <p>Password: </p>
+        <input name="phone" type="password" minlength="6" maxlength="11">
+        
+      </div>
+      <br>
+
+      <input style="padding-right: 20px;padding-left: 20px;padding-top: 5px;padding-bottom: 5px;background-color:#b7e778" type="submit" value="Sign Up for Game">
+      <div id="error-area" class="error-div"></div>
+    </form>
+      <script src="error.js"></script>
+      </body>
+</html>
